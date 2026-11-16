@@ -20,7 +20,7 @@ GDT winding details, wire sizes, fastener lengths and other coil-dependent choic
 
 ## PCB fabrication
 
-The JLCPCB order used these settings. Physical parameters are saved in `OpenBridge.kicad_pcb` under **Board Setup → Board Stackup → Physical Stackup / Board Finish**; via tenting is under **Solder Mask/Paste**.
+Fabrication specification for JLCPCB. Physical parameters are saved in `OpenBridge.kicad_pcb` under **Board Setup → Board Stackup → Physical Stackup / Board Finish**; via tenting is under **Solder Mask/Paste**.
 
 | Setting | Specification |
 | --- | --- |
@@ -31,9 +31,9 @@ The JLCPCB order used these settings. Physical parameters are saved in `OpenBrid
 | Via covering | Tented on both sides |
 | Nominal board outline | 116.84 × 167.64 mm, defined by Edge.Cuts |
 
-Other important order requirements: **IPC Class 2**, **full flying-probe electrical testing**, and **±0.2 mm outline tolerance**. Select these with the fabricator when ordering.
+Manufacturing requirements: **IPC Class 2**, **full flying-probe electrical testing**, and **±0.2 mm outline tolerance**. Select these with the fabricator when ordering.
 
-No custom stackup was specified. KiCad retains a modeled 1.44 mm FR-4 core and 0.01 mm solder mask per side; the existing dielectric constant (4.5) and loss tangent (0.02) are estimates pending manufacturer laminate data. Confirm the copper weight, laminate grade and finish in the order form as well as the fabrication files.
+The nominal stackup models a 1.44 mm FR-4 core and 0.01 mm solder mask per side. Dielectric constant (4.5) and loss tangent (0.02) are estimates pending manufacturer laminate data. Confirm the copper weight, laminate grade and finish with the fabricator.
 
 ## Update the previews
 
@@ -43,7 +43,7 @@ With Python 3.10+ and KiCad 10+ installed, run from the repository:
 python scripts/update_previews.py
 ```
 
-This audits the BOM and regenerates all README images from the saved design. Add `--watch` to refresh after saves while editing. The script uses a temporary board copy and isolated rendering settings, so it does not modify the manufacturing PCB or your KiCad preferences.
+This audits the BOM and regenerates all README images from the saved design. Add `--watch` to refresh after saves while editing. The script uses a temporary board copy and isolated rendering settings, so it does not modify the manufacturing PCB or global KiCad preferences.
 
 Set `board_color` in **[scripts/render-config.json](scripts/render-config.json)** to change the 3D solder mask. It defaults to `Black`; named KiCad colors and `#RRGGBB` are supported. The same file controls camera angle, image size and breakaway-strip removal. Run the script again after changing it.
 
@@ -53,6 +53,6 @@ The included [GitHub workflow](.github/workflows/previews.yml) refreshes and com
 
 ## Contributing and license
 
-Keep the schematic as the source of truth for parts, update the PCB from it when needed, and regenerate previews/BOM with design changes. Run KiCad ERC and DRC before proposing a change. Existing findings are recorded in the [assembly notes](docs/assembly.md); the project is not represented as having a clean release check.
+Keep the schematic as the source of truth for parts, update the PCB from it when needed, and regenerate previews/BOM with design changes. Run KiCad ERC and DRC before proposing a change, and review all findings before fabrication. See the [assembly notes](docs/assembly.md) for component selection and validation guidance.
 
 See [LICENSE](LICENSE) for the repository's GPL-3.0 license. Third-party libraries, datasheets and manufacturer models retain their applicable terms.
