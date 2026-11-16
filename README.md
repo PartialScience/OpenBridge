@@ -18,6 +18,23 @@ The [Hardware subsheet](Hardware.kicad_sch) collects the heatsink, IGBT insulato
 
 GDT winding details, wire sizes, fastener lengths and other coil-dependent choices are **unspecified**. The BOM includes generic assembly materials; it does not define a complete coil, gate driver, power supply, fan or enclosure. Component ratings are not a validated operating rating for the assembled bridge.
 
+## PCB fabrication
+
+The JLCPCB order used these settings. Physical parameters are saved in `OpenBridge.kicad_pcb` under **Board Setup → Board Stackup → Physical Stackup / Board Finish**; via tenting is under **Solder Mask/Paste**.
+
+| Setting | Specification |
+| --- | --- |
+| Construction | 2-layer FR-4, Tg135, 1.6 mm overall thickness |
+| Copper | 2 oz on both sides, modeled as 0.070 mm (70 µm) per layer |
+| Solder mask / silkscreen | Black / white |
+| Surface finish | HASL with lead (`HAL SnPb` in KiCad) |
+| Via covering | Tented on both sides |
+| Nominal board outline | 116.84 × 167.64 mm, defined by Edge.Cuts |
+
+Other important order requirements: **IPC Class 2**, **full flying-probe electrical testing**, and **±0.2 mm outline tolerance**. Select these with the fabricator when ordering.
+
+No custom stackup was specified. KiCad retains a modeled 1.44 mm FR-4 core and 0.01 mm solder mask per side; the existing dielectric constant (4.5) and loss tangent (0.02) are estimates pending manufacturer laminate data. Confirm the copper weight, laminate grade and finish in the order form as well as the fabrication files.
+
 ## Update the previews
 
 With Python 3.10+ and KiCad 10+ installed, run from the repository:
