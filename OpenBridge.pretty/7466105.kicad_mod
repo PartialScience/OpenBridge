@@ -1,0 +1,216 @@
+(footprint "7466105"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Wurth REDCUBE WP-SMBU 7466105, SMT bush M5 blind, 9 mm dia, locating pin in 1.2 mm plated hole (from SamacSys 7466105)")
+	(tags "Undefined or Miscellaneous")
+	(property "Reference" "J**"
+		(at 0 -7.1 0)
+		(layer "F.SilkS")
+		(uuid "aa88496c-183d-4d43-9de6-069bb6738f7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "7466105"
+		(at -0.35 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d065e032-4909-4cb5-ab40-3902a5936fa7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fcf3df28-3c5d-4bb6-b6f1-6a86c5f1f9df")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "883975f9-91ba-414c-8b3d-0820f09a87de")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.7 0)
+		(end -5.7 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cc7fbd65-baa8-4a6c-bafb-f33893eb039b")
+	)
+	(fp_line
+		(start -5.7 0.2)
+		(end -5.7 0.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b34c71ac-4b20-4756-872e-7c961ac19bb1")
+	)
+	(fp_arc
+		(start -5.7 0)
+		(mid -5.6 0.1)
+		(end -5.7 0.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff4adc6a-5030-43a7-bf6e-d0deba565029")
+	)
+	(fp_arc
+		(start -5.7 0.2)
+		(mid -5.8 0.1)
+		(end -5.7 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "440e75aa-b03a-40db-b38f-e6baefbede43")
+	)
+	(fp_line
+		(start -6.8 -6.1)
+		(end 6.1 -6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1cc9bfe9-9b27-4488-a7c0-6d0639bf60c2")
+	)
+	(fp_line
+		(start -6.8 6.1)
+		(end -6.8 -6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "672ca8a9-4932-44c3-8d6a-6f9843eecaf2")
+	)
+	(fp_line
+		(start 6.1 -6.1)
+		(end 6.1 6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b5475717-e661-4111-8500-be00b8399f1c")
+	)
+	(fp_line
+		(start 6.1 6.1)
+		(end -6.8 6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "534dd233-75b5-464c-be85-3abf0463bed6")
+	)
+	(fp_line
+		(start -4.5 0)
+		(end -4.5 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "831ea42e-59a1-4f17-a362-37c5bd6d641e")
+	)
+	(fp_line
+		(start 4.5 0)
+		(end 4.5 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "430dcf2a-474e-49df-ac19-c2a678965420")
+	)
+	(fp_arc
+		(start -4.5 0)
+		(mid 0 -4.5)
+		(end 4.5 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6d7957e3-6388-4108-8efc-9faefd7c279d")
+	)
+	(fp_arc
+		(start 4.5 0)
+		(mid 0 4.5)
+		(end -4.5 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "632a1b56-72cc-4388-b7cf-f419d68c5370")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.35 0 0)
+		(layer "F.Fab")
+		(uuid "55b7f287-a238-49dd-b913-ff74d34b2154")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 10 10)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "53ec18cf-6076-4ff5-a870-995116a0acda")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e0b45c93-0a81-4765-b80f-58299b0ec8f8")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/OpenBridge.3dshapes/7466105.stp"
+		(offset
+			(xyz -0.05999999776 0 -0.7200000178)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 90 0)
+		)
+	)
+)

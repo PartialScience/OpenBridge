@@ -1,0 +1,200 @@
+(footprint "DIOM5436X265N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "DO-214AA (SMB)")
+	(tags "Schottky Diode")
+	(property "Reference" "D**"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(uuid "50b616d2-28dd-4570-b36e-740c1e00f81d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DIOM5436X265N"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "93fb91f9-5808-4335-83ca-550f97569be5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "96c1dec2-9194-4d2a-bd4d-3e01e9b38b4e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1599bbd-eec9-4028-97bb-24e53aae5fc7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.675 1.812)
+		(end 2.675 1.812)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1dfa23c0-1279-4b32-8849-933000e4d06e")
+	)
+	(fp_line
+		(start 2.675 -1.812)
+		(end -3.225 -1.812)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "90fb9fb3-947d-4539-84d8-7e1d30c709c6")
+	)
+	(fp_line
+		(start -3.55 -2.225)
+		(end 3.55 -2.225)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "891a653a-ae83-4e11-9f9d-c059b9045732")
+	)
+	(fp_line
+		(start -3.55 2.225)
+		(end -3.55 -2.225)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5ed9db89-c888-4a19-831f-948aac59654c")
+	)
+	(fp_line
+		(start 3.55 -2.225)
+		(end 3.55 2.225)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fedfe856-7fde-431d-90f3-188d595b8edf")
+	)
+	(fp_line
+		(start 3.55 2.225)
+		(end -3.55 2.225)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "869744d0-f7bc-4c59-adef-19848d4f740e")
+	)
+	(fp_line
+		(start -2.675 -1.812)
+		(end 2.675 -1.812)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3ae3b844-9a0e-43d1-8cee-e639fade5c5e")
+	)
+	(fp_line
+		(start -2.675 -0.738)
+		(end -1.6 -1.812)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9059a3f1-47e2-4c7b-98cf-b6e2ecf0e316")
+	)
+	(fp_line
+		(start -2.675 1.812)
+		(end -2.675 -1.812)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cbba140e-032e-4554-948d-df3bf2a26b04")
+	)
+	(fp_line
+		(start 2.675 -1.812)
+		(end 2.675 1.812)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "068d7fa1-f417-4b75-943c-57f1df10486e")
+	)
+	(fp_line
+		(start 2.675 1.812)
+		(end -2.675 1.812)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1f657588-b131-4360-a631-0748f7ace594")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "29d39732-6228-47d7-a0ee-eeabee8b9a78")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.15 0 90)
+		(size 2.15 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "89355767-7cdc-4e01-9e34-812720172db5")
+	)
+	(pad "2" smd rect
+		(at 2.15 0 90)
+		(size 2.15 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d6f21eee-0350-4402-8cf9-33c39f60f4b6")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/OpenBridge.3dshapes/SSB44.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

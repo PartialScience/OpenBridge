@@ -1,0 +1,87 @@
+(version 1)
+
+# ============================================================================
+# JLCPCB standard 2-layer, 2 oz outer copper (jlcpcb.com/capabilities/pcb-capabilities, checked 2026-09-27).
+# Values carry a little margin over JLC's absolute minimums and avoid the extra-cost tiers.
+# In KiCad the LAST matching rule wins, so general rules come first and specific ones after.
+# ============================================================================
+
+# 2 oz: min track/space 0.16 mm; 2 oz solder-mask bridge needs >= 0.20 mm between pads
+(rule "JLC: clearance"
+	(constraint clearance (min 0.2mm)))
+(rule "JLC: track width"
+	(constraint track_width (min 0.2mm)))
+
+# Drills 0.15-6.3 mm; >= 0.3 mm avoids the small-hole surcharge. Bigger holes must be drawn on Edge.Cuts.
+(rule "JLC: drill size"
+	(constraint hole_size (min 0.3mm) (max 6.3mm)))
+
+# Pad hole-to-hole 0.45 mm; via-to-via 0.2 mm (lets stitching vias sit on a 0.8 mm pitch)
+(rule "JLC: hole to hole"
+	(constraint hole_to_hole (min 0.5mm)))
+# Mouse-bite perforations (MB* references, Panelization:BreakLine footprints): standard 0.5 mm holes at 0.85 mm pitch
+(rule "Mouse-bite perforations"
+	(condition "A.memberOfFootprint('MB*') && B.memberOfFootprint('MB*')")
+	(constraint hole_to_hole (min 0.3mm)))
+(rule "JLC: via to via hole spacing"
+	(condition "A.Type == 'Via' && B.Type == 'Via'")
+	(constraint hole_to_hole (min 0.25mm)))
+
+# PTH-to-track 0.28 mm
+(rule "JLC: hole to copper"
+	(constraint hole_clearance (min 0.3mm)))
+
+# Via ring: diameter >= hole + 0.15 mm (0.3/0.6 via). 2 oz PTH pads: >= 0.254 mm ring (0.25 used here).
+(rule "JLC: via annular ring"
+	(condition "A.Type == 'Via'")
+	(constraint annular_width (min 0.15mm)))
+(rule "JLC: PTH pad annular ring (2 oz)"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Hole_Size_X > 0.7mm")
+	(constraint annular_width (min 0.25mm)))
+
+# Routed edge >= 0.2 mm
+(rule "JLC: copper to board edge"
+	(constraint edge_clearance (min 0.3mm)))
+
+# Silkscreen: line >= 0.15 mm, text >= 1.0 mm tall, >= 0.15 mm from pads
+# (not against pours, tracks or tented vias: silk printed over mask-covered copper is normal)
+(rule "JLC: silk clearance"
+	(layer outer)
+	(condition "A.Type != 'Zone' && B.Type != 'Zone' && A.Type != 'Track' && B.Type != 'Track' && A.Type != 'Via' && B.Type != 'Via'")
+	(constraint silk_clearance (min 0.15mm)))
+# Silkscreen only (Fab-layer text is never printed). Warning only: JLC still prints smaller text, it may just not be legible
+(rule "JLC: text size"
+	(severity warning)
+	(condition "A.Layer == 'F.SilkS' || A.Layer == 'B.SilkS'")
+	(constraint text_height (min 1.0mm))
+	(constraint text_thickness (min 0.15mm)))
+
+# ============================================================================
+# High voltage, between nets in DIFFERENT voltage domains (IPC-2221B, 301-500 V, external, no conformal coat):
+#   0.8mm  mask-covered copper to mask-covered copper (pour/track/tented via)   B4
+#   1.5mm  anything involving a bare pad (component termination)                  A6
+# With conformal coating over the finished assembly both drop to 0.8 mm (A5/A7).
+# Nets inside one domain (e.g. a gate and its own emitter, <= 24 V apart) only get the JLC clearance above.
+# A net not listed in any domain (or no net) is treated as foreign to every domain.
+# ============================================================================
+# Bus+: /Bus+; Bus-: /Bus-, /G5, /G6, /G7, /G8, /GDT3_A, /GDT4_A, Net-(D6-K), Net-(D10-K); OutA: /OutA, /G1, /G2, /GDT1_A, Net-(D4-K); OutB: /OutB, /G3, /G4, /GDT2_A, Net-(D9-K); RF ground: Heat Sink
+
+(rule "HV: Bus+ domain to other domains (masked copper)"
+	(constraint clearance (min 0.8mm))
+	(condition "((A.NetName == '/Bus+') && !(B.NetName == '/Bus+')) || ((B.NetName == '/Bus+') && !(A.NetName == '/Bus+'))"))
+(rule "HV: Bus- domain to other domains (masked copper)"
+	(constraint clearance (min 0.8mm))
+	(condition "((A.NetName == '/Bus-' || A.NetName == '/G5' || A.NetName == '/G6' || A.NetName == '/G7' || A.NetName == '/G8' || A.NetName == '/GDT3_A' || A.NetName == '/GDT4_A' || A.NetName == 'Net-(D6-K)' || A.NetName == 'Net-(D10-K)') && !(B.NetName == '/Bus-' || B.NetName == '/G5' || B.NetName == '/G6' || B.NetName == '/G7' || B.NetName == '/G8' || B.NetName == '/GDT3_A' || B.NetName == '/GDT4_A' || B.NetName == 'Net-(D6-K)' || B.NetName == 'Net-(D10-K)')) || ((B.NetName == '/Bus-' || B.NetName == '/G5' || B.NetName == '/G6' || B.NetName == '/G7' || B.NetName == '/G8' || B.NetName == '/GDT3_A' || B.NetName == '/GDT4_A' || B.NetName == 'Net-(D6-K)' || B.NetName == 'Net-(D10-K)') && !(A.NetName == '/Bus-' || A.NetName == '/G5' || A.NetName == '/G6' || A.NetName == '/G7' || A.NetName == '/G8' || A.NetName == '/GDT3_A' || A.NetName == '/GDT4_A' || A.NetName == 'Net-(D6-K)' || A.NetName == 'Net-(D10-K)'))"))
+(rule "HV: OutA domain to other domains (masked copper)"
+	(constraint clearance (min 0.8mm))
+	(condition "((A.NetName == '/OutA' || A.NetName == '/G1' || A.NetName == '/G2' || A.NetName == '/GDT1_A' || A.NetName == 'Net-(D4-K)') && !(B.NetName == '/OutA' || B.NetName == '/G1' || B.NetName == '/G2' || B.NetName == '/GDT1_A' || B.NetName == 'Net-(D4-K)')) || ((B.NetName == '/OutA' || B.NetName == '/G1' || B.NetName == '/G2' || B.NetName == '/GDT1_A' || B.NetName == 'Net-(D4-K)') && !(A.NetName == '/OutA' || A.NetName == '/G1' || A.NetName == '/G2' || A.NetName == '/GDT1_A' || A.NetName == 'Net-(D4-K)'))"))
+(rule "HV: OutB domain to other domains (masked copper)"
+	(constraint clearance (min 0.8mm))
+	(condition "((A.NetName == '/OutB' || A.NetName == '/G3' || A.NetName == '/G4' || A.NetName == '/GDT2_A' || A.NetName == 'Net-(D9-K)') && !(B.NetName == '/OutB' || B.NetName == '/G3' || B.NetName == '/G4' || B.NetName == '/GDT2_A' || B.NetName == 'Net-(D9-K)')) || ((B.NetName == '/OutB' || B.NetName == '/G3' || B.NetName == '/G4' || B.NetName == '/GDT2_A' || B.NetName == 'Net-(D9-K)') && !(A.NetName == '/OutB' || A.NetName == '/G3' || A.NetName == '/G4' || A.NetName == '/GDT2_A' || A.NetName == 'Net-(D9-K)'))"))
+(rule "HV: RF ground domain to other domains (masked copper)"
+	(constraint clearance (min 0.8mm))
+	(condition "((A.NetName == 'Heat Sink') && !(B.NetName == 'Heat Sink')) || ((B.NetName == 'Heat Sink') && !(A.NetName == 'Heat Sink'))"))
+
+(rule "HV: bare pad across domains"
+	(constraint clearance (min 1.5mm))
+	(condition "(A.Type == 'Pad' || B.Type == 'Pad') && ((((A.NetName == '/Bus+') && !(B.NetName == '/Bus+')) || ((B.NetName == '/Bus+') && !(A.NetName == '/Bus+'))) || (((A.NetName == '/Bus-' || A.NetName == '/G5' || A.NetName == '/G6' || A.NetName == '/G7' || A.NetName == '/G8' || A.NetName == '/GDT3_A' || A.NetName == '/GDT4_A' || A.NetName == 'Net-(D6-K)' || A.NetName == 'Net-(D10-K)') && !(B.NetName == '/Bus-' || B.NetName == '/G5' || B.NetName == '/G6' || B.NetName == '/G7' || B.NetName == '/G8' || B.NetName == '/GDT3_A' || B.NetName == '/GDT4_A' || B.NetName == 'Net-(D6-K)' || B.NetName == 'Net-(D10-K)')) || ((B.NetName == '/Bus-' || B.NetName == '/G5' || B.NetName == '/G6' || B.NetName == '/G7' || B.NetName == '/G8' || B.NetName == '/GDT3_A' || B.NetName == '/GDT4_A' || B.NetName == 'Net-(D6-K)' || B.NetName == 'Net-(D10-K)') && !(A.NetName == '/Bus-' || A.NetName == '/G5' || A.NetName == '/G6' || A.NetName == '/G7' || A.NetName == '/G8' || A.NetName == '/GDT3_A' || A.NetName == '/GDT4_A' || A.NetName == 'Net-(D6-K)' || A.NetName == 'Net-(D10-K)'))) || (((A.NetName == '/OutA' || A.NetName == '/G1' || A.NetName == '/G2' || A.NetName == '/GDT1_A' || A.NetName == 'Net-(D4-K)') && !(B.NetName == '/OutA' || B.NetName == '/G1' || B.NetName == '/G2' || B.NetName == '/GDT1_A' || B.NetName == 'Net-(D4-K)')) || ((B.NetName == '/OutA' || B.NetName == '/G1' || B.NetName == '/G2' || B.NetName == '/GDT1_A' || B.NetName == 'Net-(D4-K)') && !(A.NetName == '/OutA' || A.NetName == '/G1' || A.NetName == '/G2' || A.NetName == '/GDT1_A' || A.NetName == 'Net-(D4-K)'))) || (((A.NetName == '/OutB' || A.NetName == '/G3' || A.NetName == '/G4' || A.NetName == '/GDT2_A' || A.NetName == 'Net-(D9-K)') && !(B.NetName == '/OutB' || B.NetName == '/G3' || B.NetName == '/G4' || B.NetName == '/GDT2_A' || B.NetName == 'Net-(D9-K)')) || ((B.NetName == '/OutB' || B.NetName == '/G3' || B.NetName == '/G4' || B.NetName == '/GDT2_A' || B.NetName == 'Net-(D9-K)') && !(A.NetName == '/OutB' || A.NetName == '/G3' || A.NetName == '/G4' || A.NetName == '/GDT2_A' || A.NetName == 'Net-(D9-K)'))) || (((A.NetName == 'Heat Sink') && !(B.NetName == 'Heat Sink')) || ((B.NetName == 'Heat Sink') && !(A.NetName == 'Heat Sink'))))"))

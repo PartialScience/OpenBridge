@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "OpenBridge")(type "KiCad")(uri "${KIPRJMOD}/OpenBridge.pretty")(options "")(descr "OpenBridge project parts"))
+)

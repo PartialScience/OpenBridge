@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OpenBridge")(type "KiCad")(uri "${KIPRJMOD}/OpenBridge.kicad_sym")(options "")(descr "OpenBridge project parts"))
+)

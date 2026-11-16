@@ -1,0 +1,15 @@
+# KiCad local history (its own git repo), backups, locks and caches
+.history/
+*-backups/
+*.lck
+~*.lck
+fp-info-cache
+*.kicad_prl
+_autosave-*
+*.bak
+*-bak
+# Generated outputs
+*-drc.rpt
+*-erc.rpt
+gerbers/
+fab/
