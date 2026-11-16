@@ -26062,26 +26062,6 @@
 		(uuid "9d1d381c-e722-4658-b97e-d77d668938bc")
 	)
 	(gr_line
-		(start 30.48 20.36)
-		(end 162.56 20.36)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.3")
-		(uuid "803acbd4-3976-4df3-b378-abd24544d6da")
-	)
-	(gr_line
-		(start 30.48 172.76)
-		(end 30.48 20.36)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.3")
-		(uuid "509b82f6-2ee2-4b3a-b365-6e24660996d6")
-	)
-	(gr_line
 		(start 96.52 22.86)
 		(end 96.52 15.24)
 		(stroke
@@ -26091,26 +26071,6 @@
 		(locked yes)
 		(layer "User.3")
 		(uuid "b1416fac-d7ac-41c3-985c-af464e1480b0")
-	)
-	(gr_line
-		(start 162.56 20.36)
-		(end 162.56 172.76)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.3")
-		(uuid "d3c71c84-75eb-4f85-a983-935cd146412b")
-	)
-	(gr_line
-		(start 162.56 172.76)
-		(end 30.48 172.76)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "User.3")
-		(uuid "88fe6711-ea55-4d2a-a059-a0378342d229")
 	)
 	(gr_text "Made By"
 		(at 55.34623 176.107781 0)
@@ -33750,4 +33710,124 @@
 		)
 	)
 	(embedded_fonts no)
+	(footprint "OpenBridge:Heatsink_Wakefield_511-6M"
+		(layer "F.Cu")
+		(locked yes)
+		(uuid "e94388cf-6109-4599-b864-2f6a9f93db07")
+		(at 96.52 96.56)
+		(descr "Wakefield 511-6M aluminum heatsink, 152.4 mm long; board mounted on 3 mm spacers. Project STEP model and mechanical envelope; no PCB pads.")
+		(tags "heatsink Wakefield 511-6M mechanical")
+		(property "Reference" "HS1"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "511-6M"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://wakefieldthermal.com/content/data_sheets/2021_data_sheets/Wakefield-Thermal-Bonded-Fin-Heat-Sinks-Data-Sheet.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Wakefield 511-6M aluminum heatsink, 152.4 mm long; board mounted on 3 mm spacers. Project STEP model and mechanical envelope; no PCB pads."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Wakefield Thermal"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "511-6M"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files)
+		(fp_rect
+			(start -66.167 -76.2)
+			(end 66.167 76.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "User.3")
+		)
+		(fp_rect
+			(start -66.167 -76.2)
+			(end 66.167 76.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "B.Fab")
+		)
+		(fp_text user "${REFERENCE} / 511-6M"
+			(at 0 -74 0)
+			(layer "User.3")
+			(effects
+				(font
+					(size 1.2 1.2)
+					(thickness 0.15)
+				)
+			)
+		)
+		(model "${KIPRJMOD}/OpenBridge.3dshapes/511-6M.stp"
+			(offset
+				(xyz 0 -76.2 -3.965)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 0 0)
+			)
+		)
+		(path "/630c6bc4-e289-41d9-9267-1104d468f277/057c3603-1507-4354-9d9b-5e13986be031")
+		(sheetname "/Hardware/")
+		(sheetfile "Hardware.kicad_sch")
+	(property "Mouser" "567-511-6M" (at 0 0 0) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
+)
 )

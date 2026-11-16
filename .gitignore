@@ -13,3 +13,5 @@ _autosave-*
 *-erc.rpt
 gerbers/
 fab/
+__pycache__/
+*.pyc

@@ -1,0 +1,5109 @@
+(kicad_sch (version 20260306) (generator "eeschema") (generator_version "10.0") (uuid "fb0c81b6-1c95-4447-9cf7-621edfcb0d0a") (paper "A3")
+(title_block (title "OpenBridge - Hardware") (rev "1.0"))
+(lib_symbols
+(symbol "OpenBridge:BOM_Item"
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files no)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "HW"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BOM_Item"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Bill-of-materials item with no board footprint (hardware, cable parts, thermal material)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BOM hardware mechanical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BOM_Item_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0.635) (xy 0.635 -0.635)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "OpenBridge:511-6M"
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files no)
+			(property "Reference" "HS"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "511-6M"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OpenBridge:Heatsink_Wakefield_511-6M"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://wakefieldthermal.com/content/data_sheets/2021_data_sheets/Wakefield-Thermal-Bonded-Fin-Heat-Sinks-Data-Sheet.pdf"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Wakefield 511-6M aluminum heatsink, 152.4 mm long; board mounted on 3 mm spacers. Project STEP model and mechanical envelope; no PCB pads."
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Wakefield Thermal"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "511-6M"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "511-6M_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.27)
+						(xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27)
+						(xy -2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27)
+						(xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		))
+(text "OpenBridge - assembly hardware" (at 20 16 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "86a3ad94-c3a2-4c36-b24e-1a8690c8a578"))
+(text "Quantities are for one board. Generic fastener lengths, wire sizes and winding details are unspecified and selected for the coil build." (at 20 22 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b6fdf2a8-436b-4925-a780-80ad47ce6cf6"))
+(text "IGBT thermal insulators" (at 20 34 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "3b5033ed-4d93-46f5-8a39-578b1d84249c"))
+(text "Parker Chomerics 60-11-D401-1671; one per Q1-Q8" (at 20 38 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b18e6413-a934-4dc5-ac63-ca821adeab47"))
+(text "IGBT screw shoulder washers" (at 20 69 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "7f7aba0f-7680-4968-b46d-576ec37ffa75"))
+(text "Keystone 3049; one per Q1-Q8" (at 20 73 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "de3c89eb-0edb-440b-aa32-847ccaacb756"))
+(text "Board-to-heatsink spacers" (at 20 104 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "8b4ed406-36d4-46c0-ba4f-f7676410847d"))
+(text "RAF M0592-3-N; 3 mm long, M3 clearance; H5-H8" (at 20 108 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9d819080-1bb6-4242-b3ea-5496cc55fcd0"))
+(text "IGBT mounting screws" (at 20 139 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "c1485803-b05b-47c9-9c47-1ce5e14f6d80"))
+(text "#4-40; length and head style unspecified" (at 20 143 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5fdb546b-ed19-431e-a9da-a4768dc99555"))
+(text "Board mounting screws" (at 20 174 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "cb00d1a3-9785-46ed-bb58-7a298a52629f"))
+(text "M3; length and head style unspecified; H5-H8" (at 20 178 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c635b94a-17f2-440f-be98-9e29a3c23952"))
+(text "Heatsink" (at 20 214 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "c6c0dc9a-51fd-4930-9211-b84d0fd9b33b"))
+(text "Wakefield 511-6M; drill/tap for this assembly" (at 20 218 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2b209599-e3ba-42ff-ad31-154b6c46146f"))
+(text "GDT cable housings" (at 155 34 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "7d3a1e0a-e5d9-41c2-8f43-0a1778b6aaf8"))
+(text "Molex 22-01-2027; four secondaries and two primaries" (at 155 38 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a20ef5d3-29b3-4549-93f4-5e05250e35ed"))
+(text "GDT crimp contacts" (at 155 69 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "b217fd48-0b44-407a-9efc-ef4382905aaf"))
+(text "Molex 08-50-0114; two per housing" (at 155 73 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "39777f9e-4ffb-47ac-902f-afe86c25083a"))
+(text "Output terminal screws" (at 155 117 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "91404ab4-f838-4ee2-a8fb-8cac184f2736"))
+(text "M5; J1/J2 have 4 mm-deep blind threads" (at 155 121 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "483c5c6d-8329-46f0-b4a6-9db0ef00278e"))
+(text "Output terminal washers" (at 155 152 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "0b88b6f8-747a-4e51-992b-3ff53ca47306"))
+(text "M5 flat washer; one per output terminal" (at 155 156 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bfa850bb-79e2-4876-b4b6-2d6448cd9ab3"))
+(text "Output ring terminals" (at 155 187 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "693ed2fe-1fc4-4a1a-99fb-02575c904288"))
+(text "M5 stud; wire gauge unspecified" (at 155 191 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3c399239-21d2-4f35-8fde-8fad4051350f"))
+(text "Power cable" (at 155 227 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "444f6c63-c6bc-44b4-9c6c-a894e56a0197"))
+(text "One assembly lot; gauge and length unspecified" (at 155 231 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3aff64c6-88d5-48e5-8eab-2ebf736b67ca"))
+(text "DC-input fasteners" (at 290 34 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "f417ea74-a719-4547-bbc9-92bad737569b"))
+(text "M4 clearance holes H1/H2; lengths unspecified" (at 290 38 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0ed56edc-52cf-4b84-aa97-d45a34c6f3f3"))
+(text "DC-input nuts" (at 290 69 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "f7a61ab6-7724-4e73-bc2c-2cff2e5c8355"))
+(text "M4; one per DC-input bolt" (at 290 73 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e3f78b84-7da4-4400-9b16-04818ddea92e"))
+(text "DC-input washers" (at 290 104 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "204789b6-e3f0-441e-93cf-8abb52750370"))
+(text "M4 flat washers; two per DC-input bolt" (at 290 108 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2ea2cc54-7d9b-455d-8369-d96547e2ed1d"))
+(text "DC-input ring terminals" (at 290 139 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "7b9cf79b-bacb-4d1c-9016-622899f265d7"))
+(text "M4 stud; wire gauge unspecified" (at 290 143 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4b4ce474-0d06-4443-b37e-26c1ee765cc9"))
+(text "GDT winding and lead wire" (at 290 174 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "aeacc518-d05f-4cae-a993-2136dcd385f5"))
+(text "One assembly lot for T1/T2; specifications unspecified" (at 290 178 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2a6a70bb-1b52-4c84-91d1-a2f6072965c4"))
+(text "Cable insulation and sleeving" (at 290 214 0) (effects (font (size 1.524 1.524) (bold yes)) (justify left bottom)) (uuid "715402da-e0ae-41b6-a85c-a09c90dd901f"))
+(text "One assembly lot; type and length unspecified" (at 290 218 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6d6a3d98-e6bf-45cb-85fc-fa8a55e4a055"))
+(text "The fan, gate-driver electronics, DC supply, bus wiring beyond these terminations and enclosure are build-specific external equipment." (at 20 265 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d3af0356-f533-4ee2-8d24-1063a2619cef"))
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 23 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5711d256-b051-49cc-9a0a-85630479f9bf")
+		(property "Reference" "HW19"
+			(at 23 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 23 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 23 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 23 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 23 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 23 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 23 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 23 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 23 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 36.97 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "fd7dbe67-0955-4c74-8b23-b642917b77bf")
+		(property "Reference" "HW20"
+			(at 36.97 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 36.97 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 36.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 36.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 36.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 36.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 36.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW20")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 50.94 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "33ec30e4-ab97-4144-af26-1696351cb98d")
+		(property "Reference" "HW21"
+			(at 50.94 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 50.94 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 50.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 50.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 50.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 50.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 50.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW21")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 64.91 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "43ae5fcb-8291-48f4-8266-491859239004")
+		(property "Reference" "HW22"
+			(at 64.91 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 64.91 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 64.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 64.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 64.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 64.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 64.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW22")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 78.88 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "b5923e2b-2fe4-49b2-9c9b-866157d2029a")
+		(property "Reference" "HW23"
+			(at 78.88 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 78.88 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 78.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 78.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 78.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 78.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 78.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW23")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 92.85 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "1ae1fa91-c17f-45b5-bc0b-d82b510a7410")
+		(property "Reference" "HW24"
+			(at 92.85 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 92.85 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 92.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 92.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 92.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 92.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 92.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW24")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 106.82 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5a5ee560-9756-4b8f-b3cb-33eb704c579b")
+		(property "Reference" "HW25"
+			(at 106.82 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 106.82 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.82 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.82 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 106.82 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 106.82 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 106.82 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 106.82 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 106.82 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW25")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 120.79 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "f69baf3e-e9dc-494c-9d56-11bee023d640")
+		(property "Reference" "HW26"
+			(at 120.79 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "60-11-D401-1671"
+			(at 120.79 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.79 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.79 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Thermal insulator pad, TO-247, 1.41 x 0.81 in, 0.015 in thick (Chomerics). 1 per IGBT (Q1-Q8)"
+			(at 120.79 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Parker Chomerics"
+			(at 120.79 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "60-11-D401-1671"
+			(at 120.79 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "24-60-11-D401-1671"
+			(at 120.79 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/24-60-11-D401-1671"
+			(at 120.79 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW26")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 23 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5ae4163f-ddf4-4546-9e51-0109f6334614")
+		(property "Reference" "HW31"
+			(at 23 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 23 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 23 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 23 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 23 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 23 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 23 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 23 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 23 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW31")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 36.97 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "9475084c-5edd-40d3-b5e2-6bacaf815cbf")
+		(property "Reference" "HW32"
+			(at 36.97 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 36.97 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 36.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 36.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 36.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 36.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 36.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 36.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW32")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 50.94 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "cc434ec9-6c32-47b2-82ea-842fa5d922db")
+		(property "Reference" "HW33"
+			(at 50.94 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 50.94 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 50.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 50.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 50.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 50.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 50.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 50.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW33")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 64.91 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "a024efdf-e435-489c-ad9f-ab53cdb5e8ed")
+		(property "Reference" "HW34"
+			(at 64.91 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 64.91 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 64.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 64.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 64.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 64.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 64.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 64.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW34")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 78.88 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "ad1dfc6d-1bc4-449c-82ba-754c6aeb8f34")
+		(property "Reference" "HW35"
+			(at 78.88 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 78.88 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 78.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 78.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 78.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 78.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 78.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 78.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW35")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 92.85 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "306b767a-085a-41a3-bf10-7acd51b25a38")
+		(property "Reference" "HW36"
+			(at 92.85 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 92.85 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 92.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 92.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 92.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 92.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 92.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 92.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW36")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 106.82 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "e4c4e082-b026-4d6f-8255-15748deee2e0")
+		(property "Reference" "HW37"
+			(at 106.82 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 106.82 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 106.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 106.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 106.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 106.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 106.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 106.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW37")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 120.79 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "2d0de113-90aa-4017-91f4-af7e662b0f7b")
+		(property "Reference" "HW38"
+			(at 120.79 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3049"
+			(at 120.79 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/3049.pdf"
+			(at 120.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Shoulder washer #4, nylon 6/6 (Keystone 3049): 2.9 mm ID, 3.43 mm shoulder, 5.5 mm flange. Insulates each IGBT's 4-40 screw from its collector tab"
+			(at 120.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 120.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3049"
+			(at 120.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "534-3049"
+			(at 120.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/534-3049"
+			(at 120.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW38")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 23 112 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "e5bc7f66-5c1f-428c-b5df-014ccb009fe2")
+		(property "Reference" "HW27"
+			(at 23 109.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M0592-3-N"
+			(at 23 114.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 23 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 23 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Round spacer, M3 (3.2 mm ID), 3 mm long (RAF). Board to heat sink at H5-H8"
+			(at 23 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "RAF Electronic Hardware"
+			(at 23 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M0592-3-N"
+			(at 23 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "761-M0592-3-N"
+			(at 23 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/761-M0592-3-N"
+			(at 23 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW27")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 36.97 112 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "486f7d44-2c8b-4106-ba26-287600d7c115")
+		(property "Reference" "HW28"
+			(at 36.97 109.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M0592-3-N"
+			(at 36.97 114.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.97 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.97 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Round spacer, M3 (3.2 mm ID), 3 mm long (RAF). Board to heat sink at H5-H8"
+			(at 36.97 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "RAF Electronic Hardware"
+			(at 36.97 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M0592-3-N"
+			(at 36.97 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "761-M0592-3-N"
+			(at 36.97 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/761-M0592-3-N"
+			(at 36.97 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW28")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 50.94 112 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "9c665c15-357f-41ab-b61b-54ab8c915aad")
+		(property "Reference" "HW29"
+			(at 50.94 109.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M0592-3-N"
+			(at 50.94 114.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.94 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.94 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Round spacer, M3 (3.2 mm ID), 3 mm long (RAF). Board to heat sink at H5-H8"
+			(at 50.94 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "RAF Electronic Hardware"
+			(at 50.94 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M0592-3-N"
+			(at 50.94 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "761-M0592-3-N"
+			(at 50.94 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/761-M0592-3-N"
+			(at 50.94 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW29")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 64.91 112 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "3785c7ca-a9c6-4e3f-9188-7e1e14214bd4")
+		(property "Reference" "HW30"
+			(at 64.91 109.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M0592-3-N"
+			(at 64.91 114.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.91 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.91 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Round spacer, M3 (3.2 mm ID), 3 mm long (RAF). Board to heat sink at H5-H8"
+			(at 64.91 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "RAF Electronic Hardware"
+			(at 64.91 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M0592-3-N"
+			(at 64.91 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "761-M0592-3-N"
+			(at 64.91 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/761-M0592-3-N"
+			(at 64.91 112 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW30")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol (lib_id "OpenBridge:BOM_Item") (at 23 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "ec1b4956-f114-4546-aa25-2231593b4738")
+(property "Reference" "HW39" (at 23 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 23 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 23 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 23 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 23 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 23 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 23 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW39") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 36.97 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "0e1ea28a-0b49-412e-a576-e60550c78298")
+(property "Reference" "HW40" (at 36.97 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 36.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 36.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 36.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 36.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 36.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 36.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW40") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 50.94 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "cbfdbfb4-5203-4fe5-b367-c6eedd3e1e35")
+(property "Reference" "HW41" (at 50.94 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 50.94 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 50.94 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 50.94 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 50.94 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 50.94 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 50.94 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW41") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 64.91 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "bdd5f43d-e714-498f-ab21-1b4b6df227be")
+(property "Reference" "HW42" (at 64.91 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 64.91 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 64.91 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 64.91 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 64.91 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 64.91 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 64.91 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW42") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 78.88 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "cb4b0276-2ec5-4709-b599-9f20decb9e73")
+(property "Reference" "HW43" (at 78.88 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 78.88 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 78.88 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 78.88 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 78.88 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 78.88 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 78.88 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW43") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 92.85 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "f9c82d77-4d46-48b1-8938-01be6a85c2eb")
+(property "Reference" "HW44" (at 92.85 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 92.85 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 92.85 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 92.85 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 92.85 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 92.85 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 92.85 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW44") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 106.82 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "dc2428bb-7ef7-4839-a38a-273a3181e86c")
+(property "Reference" "HW45" (at 106.82 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 106.82 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 106.82 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 106.82 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 106.82 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 106.82 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 106.82 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW45") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 120.79 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "5136a876-9b86-4c3a-89f6-670a23c5935d")
+(property "Reference" "HW46" (at 120.79 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "#4-40 screw" (at 120.79 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 120.79 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 120.79 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "IGBT-to-heatsink screw, #4-40; one per Q1-Q8, used with HW31-HW38 shoulder washers. Length, head style and tapped-hole depth unspecified; select for the assembled stack." (at 120.79 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 120.79 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 120.79 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW46") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 23 182 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "66e31060-2b36-42fe-9a61-4b489f6ce3e5")
+(property "Reference" "HW47" (at 23 179.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M3 screw" (at 23 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 23 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 23 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Board-to-heatsink screw, M3; one per H5-H8 with 3 mm spacers. Length and head style unspecified; select for PCB thickness, spacer and tapped-hole engagement." (at 23 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 23 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 23 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW47") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 36.97 182 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "d917324e-e5cb-4eb1-9b77-6c0464f2072b")
+(property "Reference" "HW48" (at 36.97 179.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M3 screw" (at 36.97 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 36.97 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 36.97 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Board-to-heatsink screw, M3; one per H5-H8 with 3 mm spacers. Length and head style unspecified; select for PCB thickness, spacer and tapped-hole engagement." (at 36.97 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 36.97 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 36.97 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW48") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 50.94 182 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "31553da1-23b4-4aa6-93a4-65d35ce70d38")
+(property "Reference" "HW49" (at 50.94 179.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M3 screw" (at 50.94 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 50.94 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 50.94 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Board-to-heatsink screw, M3; one per H5-H8 with 3 mm spacers. Length and head style unspecified; select for PCB thickness, spacer and tapped-hole engagement." (at 50.94 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 50.94 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 50.94 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW49") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 64.91 182 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "31aaa327-e580-4da8-966b-b903db31049e")
+(property "Reference" "HW50" (at 64.91 179.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M3 screw" (at 64.91 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 64.91 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 64.91 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Board-to-heatsink screw, M3; one per H5-H8 with 3 mm spacers. Length and head style unspecified; select for PCB thickness, spacer and tapped-hole engagement." (at 64.91 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 64.91 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 64.91 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW50") (unit 1)))))
+(symbol
+		(lib_id "OpenBridge:511-6M")
+		(at 23 227.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "057c3603-1507-4354-9d9b-5e13986be031")
+		(property "Reference" "HS1"
+			(at 23 222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "511-6M"
+			(at 23 230.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenBridge:Heatsink_Wakefield_511-6M"
+			(at 23 227.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wakefieldthermal.com/content/data_sheets/2021_data_sheets/Wakefield-Thermal-Bonded-Fin-Heat-Sinks-Data-Sheet.pdf"
+			(at 23 227.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Wakefield 511-6M aluminum heatsink, 152.4 mm long; board mounted on 3 mm spacers. Project STEP model and mechanical envelope; no PCB pads."
+			(at 23 227.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wakefield Thermal"
+			(at 23 227.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "511-6M"
+			(at 23 227.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HS1")
+					(unit 1)
+				)
+			)
+		)
+	(property "Mouser" "567-511-6M" (at 20 227.08 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 158 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "594bbbb8-bbc5-4ffe-9eaf-5da0e4ab13dc")
+		(property "Reference" "HW1"
+			(at 158 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22-01-2027"
+			(at 158 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp housing 1x02, 2.54 mm, with friction ramp (Molex 2695). Wire-side mate of the GDT headers J13/J16/J19/J22"
+			(at 158 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 158 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22-01-2027"
+			(at 158 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-22-01-2027"
+			(at 158 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-22-01-2027"
+			(at 158 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 171.97 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "0e197851-3e24-4dc8-857a-32bbee5c518b")
+		(property "Reference" "HW2"
+			(at 171.97 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22-01-2027"
+			(at 171.97 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp housing 1x02, 2.54 mm, with friction ramp (Molex 2695). Wire-side mate of the GDT headers J13/J16/J19/J22"
+			(at 171.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 171.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22-01-2027"
+			(at 171.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-22-01-2027"
+			(at 171.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-22-01-2027"
+			(at 171.97 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 185.94 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "65edbd36-d596-4fb3-8f6e-439b091a4116")
+		(property "Reference" "HW3"
+			(at 185.94 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22-01-2027"
+			(at 185.94 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp housing 1x02, 2.54 mm, with friction ramp (Molex 2695). Wire-side mate of the GDT headers J13/J16/J19/J22"
+			(at 185.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 185.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22-01-2027"
+			(at 185.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-22-01-2027"
+			(at 185.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-22-01-2027"
+			(at 185.94 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 199.91 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "e30bc016-b819-456f-921e-ff15dde7152f")
+		(property "Reference" "HW4"
+			(at 199.91 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22-01-2027"
+			(at 199.91 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp housing 1x02, 2.54 mm, with friction ramp (Molex 2695). Wire-side mate of the GDT headers J13/J16/J19/J22"
+			(at 199.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 199.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22-01-2027"
+			(at 199.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-22-01-2027"
+			(at 199.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-22-01-2027"
+			(at 199.91 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 213.88 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "9339de8b-b0f5-4f15-8f2d-63e348d7b5f5")
+		(property "Reference" "HW5"
+			(at 213.88 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22-01-2027"
+			(at 213.88 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp housing 1x02, 2.54 mm, with friction ramp (Molex 2695). Wire-side mate of the GDT headers J13/J16/J19/J22"
+			(at 213.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 213.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22-01-2027"
+			(at 213.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-22-01-2027"
+			(at 213.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-22-01-2027"
+			(at 213.88 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 227.85 42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "77d557be-a1e9-44ae-84cf-627bf75b374a")
+		(property "Reference" "HW6"
+			(at 227.85 39.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22-01-2027"
+			(at 227.85 44.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp housing 1x02, 2.54 mm, with friction ramp (Molex 2695). Wire-side mate of the GDT headers J13/J16/J19/J22"
+			(at 227.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 227.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22-01-2027"
+			(at 227.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-22-01-2027"
+			(at 227.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-22-01-2027"
+			(at 227.85 42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 158 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "6e61f6ac-b239-4128-b59d-8353d4246473")
+		(property "Reference" "HW7"
+			(at 158 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 158 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 158 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 158 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 158 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 158 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 158 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 171.97 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "f61e6987-2e2a-4dee-b679-109fa11cc517")
+		(property "Reference" "HW8"
+			(at 171.97 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 171.97 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 171.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 171.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 171.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 171.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 171.97 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 185.94 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "60b1b4f0-ea3f-4942-87e1-ffecd4d2f3e3")
+		(property "Reference" "HW9"
+			(at 185.94 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 185.94 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 185.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 185.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 185.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 185.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 185.94 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 199.91 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "87be8cd0-ecdb-4871-8f02-05db97a6e0c9")
+		(property "Reference" "HW10"
+			(at 199.91 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 199.91 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 199.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 199.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 199.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 199.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 199.91 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 213.88 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "2268e2b7-228c-4cd3-ab68-dda61e4e5296")
+		(property "Reference" "HW11"
+			(at 213.88 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 213.88 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 213.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 213.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 213.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 213.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 213.88 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 227.85 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "a60d7012-c0fe-4a50-946f-b13d3dbfbdb1")
+		(property "Reference" "HW12"
+			(at 227.85 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 227.85 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 227.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 227.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 227.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 227.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 227.85 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 241.82 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "deb341f4-4359-4fbc-95d9-1d24574b7740")
+		(property "Reference" "HW13"
+			(at 241.82 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 241.82 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 241.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 241.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 241.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 241.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 241.82 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 255.79 77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "cc7d056b-d01e-441a-84d4-c67cb102cc39")
+		(property "Reference" "HW14"
+			(at 255.79 74.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 255.79 79.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 255.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 255.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 255.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 255.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 255.79 77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 158 89.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "492f16f0-bced-4004-8d40-ff656c400745")
+		(property "Reference" "HW15"
+			(at 158 87.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 158 92.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 158 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 158 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 158 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 158 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 158 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 171.97 89.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "e871e3a2-c58d-4b87-93c7-e550cc564ccb")
+		(property "Reference" "HW16"
+			(at 171.97 87.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 171.97 92.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.97 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.97 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 171.97 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 171.97 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 171.97 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 171.97 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 171.97 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 185.94 89.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "2fa6b400-d5ba-4d96-a9db-026a65895c26")
+		(property "Reference" "HW17"
+			(at 185.94 87.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 185.94 92.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.94 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.94 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 185.94 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 185.94 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 185.94 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 185.94 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 185.94 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "OpenBridge:BOM_Item")
+		(at 199.91 89.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5f9f7600-3a50-4be3-a821-d0017bdd66f3")
+		(property "Reference" "HW18"
+			(at 199.91 87.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "08-50-0114"
+			(at 199.91 92.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.91 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.91 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "KK 254 crimp terminal, female, 22-30 AWG, tin (Molex 2759). 2 per KK housing; buy spares for crimping"
+			(at 199.91 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 199.91 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "08-50-0114"
+			(at 199.91 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "538-08-50-0114"
+			(at 199.91 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/538-08-50-0114"
+			(at 199.91 89.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "OpenBridge"
+				(path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277"
+					(reference "HW18")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol (lib_id "OpenBridge:BOM_Item") (at 158 125 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "2715f788-a8ab-46ce-87a1-295bdd961ded")
+(property "Reference" "HW51" (at 158 122.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M5 screw" (at 158 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 158 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 158 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Output ring-lug clamp screw, M5, one per J1/J2. Length unspecified; choose for lug/washer stack and <=4 mm thread engagement without bottoming in the REDCUBE blind hole." (at 158 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 158 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 158 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW51") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 171.97 125 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "2c34cbb1-e29b-4e5c-87b2-36160f1ff35c")
+(property "Reference" "HW52" (at 171.97 122.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M5 screw" (at 171.97 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 171.97 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 171.97 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Output ring-lug clamp screw, M5, one per J1/J2. Length unspecified; choose for lug/washer stack and <=4 mm thread engagement without bottoming in the REDCUBE blind hole." (at 171.97 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 171.97 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 171.97 125 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW52") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 158 160 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "37a24445-2709-4418-8717-de2c312f385b")
+(property "Reference" "HW53" (at 158 157.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M5 flat washer" (at 158 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 158 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 158 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Flat washer, M5, one per J1/J2 output ring-lug clamp. Material and outside diameter unspecified." (at 158 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 158 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 158 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW53") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 171.97 160 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "3b585424-37fe-4d32-9ea0-f63b839b8840")
+(property "Reference" "HW54" (at 171.97 157.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M5 flat washer" (at 171.97 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 171.97 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 171.97 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Flat washer, M5, one per J1/J2 output ring-lug clamp. Material and outside diameter unspecified." (at 171.97 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 171.97 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 171.97 160 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW54") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 158 195 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "9d97f945-84ce-483a-bb96-d26f9bda942e")
+(property "Reference" "HW55" (at 158 192.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M5 ring terminal" (at 158 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 158 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 158 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Output cable ring terminal, M5 stud, one per J1/J2. Wire gauge, current rating and insulation unspecified; select for the coil build." (at 158 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 158 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 158 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW55") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 171.97 195 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "484cffc2-7c6a-482f-a7e6-3632c04c004a")
+(property "Reference" "HW56" (at 171.97 192.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M5 ring terminal" (at 171.97 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 171.97 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 171.97 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Output cable ring terminal, M5 stud, one per J1/J2. Wire gauge, current rating and insulation unspecified; select for the coil build." (at 171.97 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 171.97 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 171.97 195 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW56") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 158 235 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "69bb738c-c7f5-4538-8339-b6d8ae31954c")
+(property "Reference" "HW57" (at 158 232.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "Power wire (lot)" (at 158 235 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 158 235 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 158 235 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "One assembly lot of power cable. Conductor gauge, insulation rating, length and termination details unspecified; selected for the coil build." (at 158 235 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 158 235 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 158 235 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW57") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 293 42 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "b70e488a-6c02-4eeb-a434-40f1706a2453")
+(property "Reference" "HW58" (at 293 39.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 bolt" (at 293 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 293 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 293 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "DC-input ring-lug clamp bolt, M4, one per H1/H2. Bolt length and head style unspecified; select for lug, PCB and washer stack." (at 293 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 293 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 293 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW58") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 306.97 42 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "1f204896-cf59-4e33-842a-2e8eb0a4b1e2")
+(property "Reference" "HW59" (at 306.97 39.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 bolt" (at 306.97 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 306.97 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 306.97 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "DC-input ring-lug clamp bolt, M4, one per H1/H2. Bolt length and head style unspecified; select for lug, PCB and washer stack." (at 306.97 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 306.97 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 306.97 42 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW59") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 293 77 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "9249a34d-0d38-4512-837c-a4245eab4609")
+(property "Reference" "HW60" (at 293 74.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 nut" (at 293 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 293 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 293 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Nut, M4, one per H1/H2 DC-input bolt. Material and locking method unspecified." (at 293 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 293 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 293 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW60") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 306.97 77 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "5330e892-5004-44cf-a895-d11eb8f6ceb4")
+(property "Reference" "HW61" (at 306.97 74.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 nut" (at 306.97 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 306.97 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 306.97 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Nut, M4, one per H1/H2 DC-input bolt. Material and locking method unspecified." (at 306.97 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 306.97 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 306.97 77 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW61") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 293 112 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "e8ab9580-edc4-45cd-b385-b69731d41863")
+(property "Reference" "HW62" (at 293 109.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 flat washer" (at 293 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 293 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 293 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Flat washer, M4, two per H1/H2 DC-input bolt to distribute clamp load. Outside diameter and material unspecified." (at 293 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 293 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 293 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW62") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 306.97 112 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "78887dc2-2ca0-446a-b570-62fa8e6d3db1")
+(property "Reference" "HW63" (at 306.97 109.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 flat washer" (at 306.97 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 306.97 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 306.97 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Flat washer, M4, two per H1/H2 DC-input bolt to distribute clamp load. Outside diameter and material unspecified." (at 306.97 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 306.97 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 306.97 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW63") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 320.94 112 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "e1626c0f-3156-4534-9759-9f29610d1ea6")
+(property "Reference" "HW64" (at 320.94 109.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 flat washer" (at 320.94 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 320.94 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 320.94 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Flat washer, M4, two per H1/H2 DC-input bolt to distribute clamp load. Outside diameter and material unspecified." (at 320.94 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 320.94 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 320.94 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW64") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 334.91 112 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "fc2fd82c-16d0-46cc-b142-a180215d4253")
+(property "Reference" "HW65" (at 334.91 109.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 flat washer" (at 334.91 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 334.91 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 334.91 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "Flat washer, M4, two per H1/H2 DC-input bolt to distribute clamp load. Outside diameter and material unspecified." (at 334.91 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 334.91 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 334.91 112 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW65") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 293 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "1101c082-168c-492d-bc19-c1771fc8e841")
+(property "Reference" "HW66" (at 293 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 ring terminal" (at 293 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 293 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 293 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "DC-input cable ring terminal, M4 stud, one per H1/H2. Wire gauge, current rating and insulation unspecified; select for the coil build." (at 293 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 293 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 293 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW66") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 306.97 147 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "2898e8e4-c5f0-4fb9-bd6a-fdfc7e5e7fb1")
+(property "Reference" "HW67" (at 306.97 144.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "M4 ring terminal" (at 306.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 306.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 306.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "DC-input cable ring terminal, M4 stud, one per H1/H2. Wire gauge, current rating and insulation unspecified; select for the coil build." (at 306.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 306.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 306.97 147 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW67") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 293 182 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "4f5bcc7f-8e25-4114-8c0f-6ddf1c511909")
+(property "Reference" "HW68" (at 293 179.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "GDT wire (lot)" (at 293 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 293 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 293 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "One assembly lot of GDT winding and lead wire for T1/T2. Turns, ratio, phasing, wire gauge, insulation and length unspecified; selected for the coil build. T1/T2 BOM entries supply the bare cores only." (at 293 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 293 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 293 182 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW68") (unit 1)))))
+(symbol (lib_id "OpenBridge:BOM_Item") (at 293 222 0) (unit 1) (body_style 1) (exclude_from_sim yes) (in_bom yes) (on_board no) (in_pos_files no) (dnp no) (uuid "bdc133da-6d74-42e7-b45c-588bc1c5e3e1")
+(property "Reference" "HW69" (at 293 219.46 0) (effects (font (size 1.27 1.27))))
+(property "Value" "Insulation (lot)" (at 293 222 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 293 222 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "" (at 293 222 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "One assembly lot of heat-shrink/insulating sleeving for wiring and terminations. Material, insulation rating, sizes and length unspecified; selected for the coil build." (at 293 222 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Manufacturer" "Generic" (at 293 222 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "MPN" "Unspecified" (at 293 222 0) (hide yes) (effects (font (size 1.27 1.27))))
+(instances (project "OpenBridge" (path "/a04feffd-6f5e-4d93-bfff-fc48ec284fb8/630c6bc4-e289-41d9-9267-1104d468f277" (reference "HW69") (unit 1)))))
+(embedded_fonts no)
+)
