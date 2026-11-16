@@ -65,6 +65,16 @@ def validate_render_outline(cli, board, env=None):
         raise ValueError("KiCad rejected the render outline: " + "; ".join(sorted(set(failures))))
 
 
+def stackup_color_args(cli, env=None):
+    # KiCad 10.0.0 defaults to true; explicitly passing its advertised boolean
+    # argument crashes with bad_any_cast. Newer 10.0 releases use an opt-in flag.
+    help_text = run([cli, "pcb", "render", "--help"], env=env)
+    flag = "--use-board-stackup-colors"
+    if flag not in help_text:
+        raise RuntimeError("This KiCad renderer cannot apply the configured board color")
+    return [] if flag + " VAR" in help_text else [flag]
+
+
 def generate(args):
     cli = cli_path(args.kicad_cli)
     config_file = Path(args.config).resolve()
@@ -104,7 +114,7 @@ def generate(args):
         print(f"Rendering main board in {color}...")
         run([cli, "pcb", "render", "--output", work / "assembly.png", "--width", config["width"], "--height", config["height"],
              "--rotate", ",".join(map(str, config["rotation"])), "--zoom", config["zoom"], "--quality", config["quality"],
-             "--background", "transparent", render_board], env=env)
+             "--background", "transparent", *stackup_color_args(cli, env), render_board], env=env)
         run([cli, "sch", "export", "svg", "--output", work / "schematics", "--exclude-drawing-sheet", ROOT / "OpenBridge.kicad_sch"], env=env)
         # Plot bottom copper first so blue B.Cu sits beneath red F.Cu.
         # The 2D view shows the full panel used for fabrication.

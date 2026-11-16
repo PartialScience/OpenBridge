@@ -7,10 +7,21 @@ from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from kicad_helpers import ROOT, child, children, cli_path, model_directory, parse, properties
 from prepare_render import prepare
-from update_previews import pcb_preview, validate_render_outline
+from update_previews import pcb_preview, validate_render_outline, stackup_color_args
+
+
+class RenderColorArgumentsTests(unittest.TestCase):
+    def test_early_kicad_10_uses_its_true_default(self):
+        with patch("update_previews.run", return_value="Usage: render [--use-board-stackup-colors VAR] INPUT_FILE"):
+            self.assertEqual(stackup_color_args("kicad-cli"), [])
+
+    def test_current_kicad_10_opt_in_flag(self):
+        with patch("update_previews.run", return_value="Usage: render [--use-board-stackup-colors] INPUT_FILE"):
+            self.assertEqual(stackup_color_args("kicad-cli"), ["--use-board-stackup-colors"])
 
 
 class RenderCopyTests(unittest.TestCase):
